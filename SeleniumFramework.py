@@ -28,3 +28,19 @@ class BaseSeleniumTest:
     def find_element_by_id(self, element_id):
         """Method to find an element by id"""
         return self.driver.find_element
+    
+    """Write a method to take screenshots in a Selenium testing framework using python."""
+
+    def take_screenshot(driver):
+        """Take a screenshot using the given Selenium webdriver.
+
+        Args:
+            driver (selenium.webdriver): Selenium webdriver instance.
+
+        Returns:
+            string: Path to the screenshot image.
+        """
+        file_name = 'screenshot-{}.png'.format(int(time.time()))
+        file_path = os.path.join(os.getcwd(), file_name)
+        driver.save_screenshot(file_path)
+        return file_path

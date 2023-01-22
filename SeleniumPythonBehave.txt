@@ -1,0 +1,15 @@
+Create a Selenium automated testing framework that uses Python and Behave.
+
+1. Install Python and Selenium
+2. Install behave through pip
+3. Create a project directory and add the following files:
+	- conftest.py
+	- environment.py
+	- steps/steps.py
+4. Create environment.py with the url of the website to be tested
+5. Create conftest.py with the configuration settings for Selenium
+6. Create steps/steps.py for the test steps
+7. Create the feature files for the tests
+8. Create a test runner script
+9. Run the tests with the test runner
+10. Analyze the results and make necessary changes to the tests
